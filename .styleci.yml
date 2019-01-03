@@ -1,0 +1,15 @@
+preset: laravel
+
+disabled:
+  - trailing_comma_in_multiline_array
+
+enabled:
+  - unalign_double_arrow
+
+finder:
+  exclude:
+    - "tests"
+  name:
+    - "*.php"
+  not-name:
+    - "_ide_helper_models.php"

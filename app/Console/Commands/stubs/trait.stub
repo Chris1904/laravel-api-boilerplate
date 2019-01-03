@@ -1,0 +1,17 @@
+<?php
+
+namespace DummyNamespace;
+
+use App\Models\DummyModel;
+
+trait DummyTrait
+{
+    protected $DummyVariable;
+
+    public function DummyMethod()
+    {
+        $this->DummyVariable = DummyModel::query();
+
+        return $this;
+    }
+}
