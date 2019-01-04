@@ -25,6 +25,16 @@ php artisan jwt:secret
 
 wip
 
+### Additional Information
+
+Make sure you set a cron job to run your scheduler.
+
+```bash
+* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
+```
+
+This is needed to continually create backups.
+
 ## Inspiration
 
 This package was inspired by [francescomalatesta/laravel-api-boilerplate-jwt](http://github.com/francescomalatesta/laravel-api-boilerplate-jwt)
